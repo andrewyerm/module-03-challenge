@@ -5,6 +5,8 @@ const collectEmployees = function() {
   const employees = [];
   let addAnotherEmployee = true;
 
+  // prompt for names //
+
   while (addAnotherEmployee) {
     const firstName = prompt("Enter employee's first name:");
     const lastName = prompt("Enter employee's last name:");
@@ -20,6 +22,8 @@ const collectEmployees = function() {
 
   return employees;
 }
+
+// list employees //
 
 const displayAverageSalary = function(employeesArray) {
 
@@ -53,7 +57,7 @@ const trackEmployeeData = function() {
   displayEmployees(employees);
 }
 
-
+// button to add new employees//
 addEmployeesBtn.addEventListener('click', trackEmployeeData);
 
 
